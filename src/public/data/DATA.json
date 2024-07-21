@@ -1,0 +1,28 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Restaurant A",
+      "description": "This is Restaurant A",
+      "pictureId": "1.jpg",
+      "rating": 4.5,
+      "details": "Detailed information about Restaurant A."
+    },
+    {
+      "id": 2,
+      "name": "Restaurant B",
+      "description": "This is Restaurant B",
+      "pictureId": "2.jpg",
+      "rating": 4.0,
+      "details": "Detailed information about Restaurant B."
+    },
+    {
+      "id": 3,
+      "name": "Restaurant C",
+      "description": "This is Restaurant C",
+      "pictureId": "3.jpg",
+      "rating": 3.5,
+      "details": "Detailed information about Restaurant C."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+.restaurant-detail {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-bar {
+    padding: 8px 16px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .app-bar .app-bar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .app-bar .app-bar-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  
+  .app-bar .app-bar-nav {
+    display: none;
+  }
+  
+  .app-bar .menu-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .drawer {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    padding: 16px;
+    z-index: 100;
+  }
+  
+  .drawer.open {
+    left: 0;
+  }
+  
+  .drawer nav ul {
+    list-style: none;
+  }
+  
+  .drawer nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .hero {
+    background-color: #f8f8f8;
+    padding: 64px 16px;
+    text-align: center;
+  }
+  
+  .hero-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  main {
+    padding: 32px;
+    flex: 1;
+  }
+  
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .restaurant-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .restaurant-item__header {
+    position: relative;
+  }
+  
+  .restaurant-item__header__poster {
+    width: 100%;
+  }
+  
+  .restaurant-item__header__rating {
+    position: absolute;
+    padding: 8px;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    background-color: black;
+    color: white;
+  }
+  
+  .restaurant-item__header__rating__score {
+    margin-left: 10px;
+  }
+  
+  .restaurant-item__content {
+    padding: 16px;
+  }
+  
+  .restaurant-item__content h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .restaurant-item__content h3 a {
+    color: #db0000;
+    text-decoration: none;
+  }
+  
+  .restaurant-item__content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  
+  footer {
+    padding: 16px;
+  }
+  
+  footer p {
+    text-align: center;
+    color: #aaaaaa;
+  }
+  
+  footer p a {
+    color: #db0000;
+    text-decoration: none;
+  }
+  
